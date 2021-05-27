@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    background-color: pink;
+    background-color: #c5f1a8;
 }
 #scoreTally {
     font-size: 80px;
@@ -23,16 +23,18 @@
     width: 1000px;
     height: 400px;
     border: 2px solid black;
+    background-image: url("./assets/bluesky.png");
+    background-color: #c5f1a8;
     position: relative;
     top: 50px;
 }
 
 #character{
-    width: 40px;
+    width: 60px;
     height: 100px;
-    background-color: red;
+    background: none;
     position: relative;
-    top: 300px;
+    top: 260px;
     left: 20px;
     animation: jump 500ms infinate;
 }
@@ -56,9 +58,8 @@
 #block {
     width: 60px;
     height: 60px;
-    background-color: blue;
     position: relative;
-    top: 240px;
+    top: 260px;
     left: 960px;
     animation: block 1.5s infinite linear;
 }
