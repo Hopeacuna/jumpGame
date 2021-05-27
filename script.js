@@ -16,7 +16,7 @@ function jump() {
 let showScore = {
     add: function addScore() {
         scoreValue = (scoreValue + 1);
-        score.innerText = scoreValue;
+        score.innerText = `Your Score: ${scoreValue}`;
         // console.log(scoreValue);
     }
 }
