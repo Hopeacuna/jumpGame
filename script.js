@@ -1,5 +1,7 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
+let score = document.getElementById("scoreTally");
+let scoreValue = 0;
 
 function jump() {
     if (character.classList != "animate") {
@@ -10,12 +12,26 @@ function jump() {
     }, 500)
 }
 
+
+let showScore = {
+    add: function addScore() {
+        scoreValue = (scoreValue + 1);
+        score.innerText = scoreValue;
+        // console.log(scoreValue);
+    }
+}
+
+
 var checkDead = setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     if(blockLeft < 20 && blockLeft > 0 && characterTop >=130) {
         block.style.animation = "none";
         block.style.display = "none";
+        delete showScore;
         alert("YOU LOSE!");
+    }
+    else {
+        showScore.add();
     }
 }, 10);
