@@ -29,7 +29,11 @@ var checkDead = setInterval(function(){
         block.style.animation = "none";
         block.style.display = "none";
         delete showScore;
-        alert("YOU LOSE!");
+        if (confirm("You lose! Click okay to play again!") == true) {
+			location.reload();
+		} else {
+			window.close();
+		}
     }
     else {
         showScore.add();

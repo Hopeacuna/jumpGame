@@ -16,7 +16,7 @@
 #game {
     width: 500px;
     height: 200px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 #character{
@@ -25,6 +25,7 @@
     background-color: red;
     position: relative;
     top: 150px;
+    left: 10px;
     animation: jump 500ms infinate;
 }
 @keyframes jump {
