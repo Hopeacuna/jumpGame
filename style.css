@@ -62,6 +62,7 @@
     top: 260px;
     left: 960px;
     animation: block 1.5s infinite linear;
+    border-radius: 5px;
 }
 @keyframes block {
     0%{left:960px;}
