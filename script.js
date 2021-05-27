@@ -29,10 +29,10 @@ var checkDead = setInterval(function(){
         block.style.animation = "none";
         block.style.display = "none";
         delete showScore;
-        if (confirm("You lose! Click okay to play again!") == true) {
+        if (confirm("You lose! Click OK to play again!") == true) {
 			location.reload();
 		} else {
-			window.close();
+			close();
 		}
     }
     else {
